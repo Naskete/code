@@ -159,8 +159,13 @@ void Display(Linklist list){
 
 // 链表翻转
 void Reverse(Linklist &list){
-    Linklist p = list->next, q = p->next, r = p;
-    while(r->next){
-        r=r->next;
+    Linklist p = list->next;
+    list->next = NULL;
+    while(p){
+        Node *q = new Node;
+        q->elem = p->elem;
+        q->next = list->next;
+        list->next = q;
+        p=p->next;
     }
 }
