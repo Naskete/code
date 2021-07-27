@@ -51,3 +51,10 @@ status Pop(Stack &stack, int &elem){
     elem = *--stack.top;
     return OK;
 }
+
+
+void Display(Stack stack){
+    while(stack.top!=stack.bottom){
+        cout<<*--stack.top<<endl;
+    }
+}
