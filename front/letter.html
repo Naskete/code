@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #d5ddea;
+        }
+        
+        .cover {
+            position: relative;
+            width: 0;
+            height: 0;
+            margin: 75px auto 0px;
+            border-top: 0px;
+            border-left: 301px solid transparent;
+            border-right: 301px solid transparent;
+            border-bottom: 185px solid beige;
+            z-index: 0;
+        }
+        
+        .env {
+            position: relative;
+            width: 602px;
+            height: 322px;
+            margin: 0px auto;
+            background: #F1F1F1;
+            z-index: 3;
+            border: 1px solid black;
+            /* border-left: 301px solid #FFFAF7;
+            border-right: 301px solid #FFFAF7;
+            border-top: 161px solid beige;
+            border-bottom: 161px solid transparent; */
+        }
+        
+        .buttom {
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 0px solid transparent;
+            border-left: 301px solid transparent;
+            border-right: 301px solid transparent;
+            border-bottom: 240px solid #eee7ed;
+            /* margin-left: -301px;
+            margin-top: -79px; */
+            margin-top: -240px;
+            z-index: 5;
+        }
+        
+        .left {
+            width: 0;
+            height: 0;
+            border-right: 0px solid transparent;
+            border-left: 301px solid #FFFAF7;
+            border-bottom: 161px solid transparent;
+            border-top: 161px solid transparent;
+            margin-top: -300px;
+            z-index: 3;
+        }
+        
+        .right {
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 301px solid #FFFAF7;
+            border-bottom: 161px solid transparent;
+            border-top: 161px solid transparent;
+            margin-left: 301px;
+            margin-top: -321px;
+            z-index: 3;
+        }
+        
+        .letter {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background: azure;
+            margin-top: -100px;
+            margin-left: 50px;
+            z-index: -1;
+            /* margin-top: -100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+    </div>
+    <div class="env">
+
+        <div class="letter"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="buttom"></div>
+    </div>
+</body>
+
+</html>
